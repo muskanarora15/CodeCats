@@ -1,0 +1,63 @@
+#include<stdio.h>
+void main()
+{
+    int money;
+
+    printf("Enter monney");
+    scanf("%d",&money);
+    while(money>0)
+    {    int c=0;
+        if(money>=2000){
+        c = c + money/2000;
+        printf("%d notes of 2000\n",c);
+        money = money- 2000*(money/2000);
+        }
+        
+        else if(money<2000 && money>=500){
+        c = c + money/500;
+         printf("%d notes of 500\n",c);
+        money = money- 500*(money/500);
+        }
+          
+        else if(money<500 && money>=200){
+        c = c + money/200;
+         printf("%d notes of 200\n",c);
+        money = money- 200*(money/200);
+        }
+        else if(money<200 && money >=100)
+        {
+            c = c + money/100;
+             printf("%d notes of 100\n",c);
+            money = money -100*(money/100);
+        }
+        else if(money<100 && money>=50)
+        {
+           c  = c + money/50;
+            printf("%d notes of 50\n",c);
+            money = money -50*(money/50);
+        }
+        else if(money<50 && money>=20)
+        {
+             c= c + money/20;
+              printf("%d notes of 20\n",c);
+            money = money -20*(money/20);
+        }
+        else if( money<20 && money>=10)
+        {
+            c = c + money/10;
+             printf("%d notes of 10\n",c);
+            money = money -10*(money/10);
+        }
+        else 
+        {
+c = c+ money/1;
+printf("%d note of rs 1\n",c);
+ money = money -(money/1);
+        }
+ 
+        
+
+
+    }
+
+}
