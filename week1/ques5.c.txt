@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+ char ch;
+ printf("enter any character");
+ scanf("%c",&ch);
+ if(ch>='a' && ch<='z')
+ printf("this is alphabet");
+ else if(ch>=48 && ch<=57)
+ printf("%c this is digit",ch);
+ else
+ printf("this is soecial characterr");
+}
