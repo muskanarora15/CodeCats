@@ -22,7 +22,7 @@ static int convert(char c)
     }
 }
 
-int roman_to_int (char *s)
+int convert (char s)
 {
     int i, res = convert(s[0]);
 
@@ -39,8 +39,9 @@ int roman_to_int (char *s)
 }
 int main(void)
  {
-  char *str1 = "XIV";
-    printf("Original Roman number: %s", str1);
+  char str1[20];
+    printf("enter number\n");
+    scanf("%s",&str1);
     printf("\nRoman to integer: %d", convert(str1));
     return 0;
 }
