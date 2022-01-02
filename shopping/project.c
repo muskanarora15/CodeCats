@@ -121,6 +121,7 @@ void main()
 
 void filedata()
     {
+ system("cls");
          FILE *fp;
 char name[20],email_add[30],ps_wrd[20],user_name[30];
 fp = fopen("data.txt", "a");
@@ -272,7 +273,7 @@ void info()
   void show(int log)
     {
        
-
+system("cls");
         int choice1,choice2;
         
        
@@ -301,7 +302,7 @@ void info()
 void form(int log,int j)
 
 {
-    
+    system("cls");
     FILE *infile;
    struct item input[10];
    int n,n1,jn;
@@ -357,7 +358,7 @@ printf("------------------------------------------------------------------------
 //--------------------------------------------------------------
 void cart(int n,int j)
 {
-   
+   system("cls");
      FILE *infile;
      FILE *in;
    struct item input[10];
@@ -396,6 +397,7 @@ static int calc =0;
 
  void showcart()
 {
+  system("cls");
      char ch;
 
      int cal=0,i,cho;
