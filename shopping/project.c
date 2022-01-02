@@ -101,6 +101,7 @@ void main()
      }
      else{
      printf("****************LOG OUT SUCESSFULLY************\n");
+     system("pause");
      log =0;
      }
         break;
